@@ -6,6 +6,7 @@
 . ./src/languages/java.sh
 . ./src/languages/python.sh
 . ./src/languages/javascript.sh
+. ./src/languages/php.sh
 
 # db
 . ./src/db/postgresql.sh
