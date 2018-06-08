@@ -62,7 +62,9 @@ apt-get install -y  make \
                     system-config-samba \
                     manpages-dev \
                     cifs-utils \
-                    htop
+                    htop \
+                    clang-format \
+                    clang-format-4.0
 
 # enable syntax highlighting for all the available languages
 find /usr/share/nano/ -iname "*.nanorc" -exec echo include {} \; >> ~/.nanorc

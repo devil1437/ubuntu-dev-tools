@@ -3,6 +3,6 @@
 # clone the github repo
 echo "Installing php..."
 
-apt install -y php7.2-cli hhvm
+apt install -y php7.2-cli hhvm php7.2-pgsql
 
-echo "php has been installed"
+echo "php7.2 has been installed"
