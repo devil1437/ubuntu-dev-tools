@@ -9,13 +9,13 @@
 
 # db
 . ./src/db/postgresql.sh
-. ./src/db/mysql.sh
+# . ./src/db/mysql.sh
 
 # tools
-. ./src/tools/docker.sh
+# . ./src/tools/docker.sh
 
 # extra
-. ./src/extra/uicustomization.sh
+# . ./src/extra/uicustomization.sh
 
 # aliases
 . ./src/aliases/generic.sh

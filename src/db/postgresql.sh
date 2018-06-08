@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-echo "Installing postgresql 9.6 and related tools..."
-apt-get install -y postgresql-9.6 postgresql-server-dev-9.6 pgadmin3
+echo "Installing postgresql 10 and related tools..."
+apt-get install -y postgresql-10 postgresql-server-dev-10 pgadmin3
