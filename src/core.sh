@@ -65,7 +65,8 @@ apt-get install -y  make \
                     htop \
                     clang-format \
                     clang-format-4.0 \
-                    parallel
+                    parallel \
+                    libgconf2-4
 
 # enable syntax highlighting for all the available languages
 find /usr/share/nano/ -iname "*.nanorc" -exec echo include {} \; >> ~/.nanorc
