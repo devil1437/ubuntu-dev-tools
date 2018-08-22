@@ -6,6 +6,7 @@
 . ./src/languages/java.sh
 . ./src/languages/python.sh
 . ./src/languages/javascript.sh
+. ./src/languages/php.sh
 
 # db
 . ./src/db/postgresql.sh
@@ -13,6 +14,7 @@
 
 # tools
 # . ./src/tools/docker.sh
+. ./src/tools/yarn.sh
 
 # extra
 # . ./src/extra/uicustomization.sh
