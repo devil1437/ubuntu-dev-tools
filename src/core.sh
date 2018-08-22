@@ -53,17 +53,18 @@ apt-get install -y  make \
                     exfat-fuse \
                     unrar \
                     net-tools \
-		    cmake \
-		    silversearcher-ag \
-		    openssh-server \
-		    nfs-kernel-server \
-		    samba \
-		    samba-common \
-		    system-config-samba \
-		    manpages-dev \
-		    cifs-utils
-		    # php5-cli \
-		    # php5-pgsql \
+                    cmake \
+                    silversearcher-ag \
+                    openssh-server \
+                    nfs-kernel-server \
+                    samba \
+                    samba-common \
+                    system-config-samba \
+                    manpages-dev \
+                    cifs-utils \
+                    jq
+                    # php5-cli \
+                    # php5-pgsql \
 
 # enable syntax highlighting for all the available languages
 find /usr/share/nano/ -iname "*.nanorc" -exec echo include {} \; >> ~/.nanorc
