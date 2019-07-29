@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+if [ -z ${2+x} ]
+then
+	exit 1
+else
+	git remote add ${1} 'git@git.synology.com:'${1}'/'${2}'.git'
+	git fetch --prune ${1}
+fi

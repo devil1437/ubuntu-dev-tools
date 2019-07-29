@@ -1,0 +1,19 @@
+BasedOnStyle : Google
+AllowShortFunctionsOnASingleLine : Inline
+BreakBeforeBraces : Custom
+BraceWrapping:
+  AfterClass:      false
+  AfterControlStatement: false
+  AfterEnum:       false
+  AfterFunction:   true
+  AfterNamespace:  false
+  AfterObjCDeclaration: false
+  AfterStruct:     false
+  AfterUnion:      false
+  BeforeCatch:     false
+  BeforeElse:      false
+  IndentBraces:    false
+ColumnLimit : 120
+DerivePointerAlignment : false
+Standard : C++11
+TabWidth : 8

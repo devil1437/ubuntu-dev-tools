@@ -1,0 +1,2 @@
+#!/bin/bash
+exiv2 pr -p a "$@" | grep GPS

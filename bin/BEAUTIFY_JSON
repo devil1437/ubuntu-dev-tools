@@ -1,0 +1,4 @@
+#!/bin/sh
+# BEAUTIFY_JSON <PATH_TO_JSON_FILE>
+
+cat $1 | python -m json.tool

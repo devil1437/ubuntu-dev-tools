@@ -1,0 +1,46 @@
+#!/usr/bin/env python2
+
+
+def is_cpp_source(filepath):
+    return filepath.endswith('.h') or filepath.endswith('.cpp')
+
+
+def is_protobuf_source(filepath):
+    return filepath.find('.pb.') != -1
+
+
+def format_source(filepath):
+    import subprocess
+    print('formatting {0}', filepath)
+    subprocess.check_call(['clang-format-4.0', '-i', filepath])
+
+
+def get_args():
+    import argparse
+    parser = argparse.ArgumentParser(
+        description="auto-formatting *.cpp & *.h using clang-format-4.0")
+    parser.add_argument('-s',
+                        type=str,
+                        metavar='DIR',
+                        dest='source',
+                        required=True,
+                        help='root directory to auto-format source codes')
+
+    return parser.parse_args()
+
+
+def main(args):
+    import os
+
+    all_source_files = []
+    for root, dirs, files in os.walk(args.source):
+        matched_files = filter(
+            lambda f: is_cpp_source(f) and not is_protobuf_source(f), files)
+        all_source_files.extend(map(lambda f: os.path.join(root, f),
+                                    matched_files))
+
+    map(lambda f: format_source(f), all_source_files)
+
+
+if __name__ == '__main__':
+    main(get_args())

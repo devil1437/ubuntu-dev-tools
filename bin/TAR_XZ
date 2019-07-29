@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+tar cfJ test.tar.xz ${@:2}
